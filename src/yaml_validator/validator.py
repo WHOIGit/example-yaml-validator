@@ -1,6 +1,5 @@
-#!/usr/bin/env python3
+"""Core validation functions for YAML configuration files."""
 
-import sys
 import yaml
 
 
@@ -83,7 +82,3 @@ def validate_config(user_file, default_file):
     annotations = extract_annotations(default_file)
 
     return validate_config_recursive(user_data, default_data, annotations)
-
-if __name__ == "__main__":
-    if not validate_config(sys.argv[1], sys.argv[2]):
-        sys.exit(1)
