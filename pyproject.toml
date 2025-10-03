@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "yaml-validator"
-version = "0.2.0"
+version = "0.3.0"
 description = "A Python utility for validating user YAML configuration files against a default/template YAML file with support for optional fields"
 readme = "README.md"
 requires-python = ">=3.7"
